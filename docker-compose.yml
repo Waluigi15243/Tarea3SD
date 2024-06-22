@@ -1,9 +1,0 @@
-services:
-  my-test-service:
-    platform: linux/amd64
-    image: suhothayan/hadoop-spark-pig-hive:2.9.2
-    ports:
-      - 50070:50070
-      - 8088:8088
-      - 8080:8080
-    command: bash
