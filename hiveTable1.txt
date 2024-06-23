@@ -1,0 +1,7 @@
+CREATE TABLE CSVData (field1 STRING, field2 STRING, field3 INT, field4 STRING)
+
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+LOAD DATA INPATH '/user/root/branch_traces.csv' INTO TABLE CSVData;
+
+SELECT * FROM CSVData;
